@@ -40,6 +40,9 @@ public class RegisteredTAtest {
 
 	@Test
 	public void fn_RegisteredTA() throws Exception{
+		System.out.println("Hellloooooooo");
+		
+		
 		sTestCaseName=Thread.currentThread().getStackTrace()[1].getMethodName();
 		ExcelUtil.setExcelFile(Constant.Path_TestData1+Constant.File_RegisterTA,Constant.Sheet_RegisteredTA);
 		iTestCaseRow = ExcelUtil.getRowContains(sTestCaseName,Constant.Col_TestCaseName);
